@@ -344,9 +344,9 @@ function getSumOfDigits(num) {
  *   15  => false
  */
 function isPowerOfTwo(num) {
-  const division = function (n) {
+  function division(n) {
     return n / 2;
-  };
+  }
   let res = division(num);
   for (let i = 0; ; i += 1) {
     if (res !== 1 && res >= 2) {
